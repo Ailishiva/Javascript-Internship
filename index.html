@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book Manager</title>
+    <link rel="stylesheet"   href="style.css"/>
+  </head>
+  <body>
+    <h1>Address Book Manager</h1>
+    
+    <form id="addContactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+      <button type="submit">Add Contact</button>
+    </form>
+    
+    <h2>Contact List</h2>
+    
+    <div>
+      <label for="searchByName">Search by Name:</label>
+      <input type="text" id="searchByName" name="searchByName">
+    </div>
+    
+    <div>
+      <label for="searchByMobileNumber">Search by Mobile Number:</label>
+      <input type="tel" id="searchByMobileNumber" name="searchByMobileNumber" pattern="[0-9]{10}">
+    </div>
+    
+    <ul id="contactList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
